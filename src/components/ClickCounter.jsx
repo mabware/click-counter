@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button } from 'semantic-ui-react';
+import { Button } from 'antd';
 
 const ClickCounter = () => {
   const [clicks, setClicks] = useState(0);
@@ -11,7 +11,7 @@ const ClickCounter = () => {
         {' '}
         {clicks}
       </div>
-      <Button onClick={() => setClicks(clicks + 1)}>
+      <Button type="primary" onClick={() => setClicks(clicks + 1)}>
         +1
       </Button>
     </>
